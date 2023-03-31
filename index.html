@@ -28,29 +28,39 @@
         <div class="input-container">
           <div class="bill-amount">
             <label for="bill-amount">Bill</label>
-            <input type="number" name="bill-amount" placeholder="0" />
+            <input
+              id="bill-amount"
+              type="number"
+              name="bill-amount"
+              placeholder="0"
+            />
           </div>
           <div class="percentages">
             <div class="percent-title">
               <p>Select Tip %</p>
             </div>
             <div class="five-percent">
-              <button>5%</button>
+              <button value="0.5" class="percent-btn">5%</button>
             </div>
             <div class="ten-percent">
-              <button>10%</button>
+              <button value="0.10" class="percent-btn">10%</button>
             </div>
             <div class="fifteen-percent">
-              <button>15%</button>
+              <button value="0.15" class="percent-btn">15%</button>
             </div>
             <div class="twentyfive-percent">
-              <button>25%</button>
+              <button value="0.25" class="percent-btn">25%</button>
             </div>
             <div class="fifty-percent">
-              <button>50%</button>
+              <button value="0.50" class="percent-btn">50%</button>
             </div>
             <div class="custom-percent">
-              <input type="number" name="custom-percent" placeholder="Custom" />
+              <input
+                id="custom-input"
+                type="number"
+                name="custom-percent"
+                placeholder="Custom"
+              />
             </div>
           </div>
           <div class="number-people">
@@ -65,7 +75,7 @@
               <p class="person">/ person</p>
             </div>
             <div class="tip-amount-display">
-              <span>$0.00</span>
+              <span id="total">$0.00</span>
             </div>
             <div class="total-text">
               <p class="text-display">Total</p>

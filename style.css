@@ -13,7 +13,7 @@ body {
 .logo {
   display: flex;
   margin: 0 auto;
-  padding: 8em 0;
+  padding: 6em 0;
 }
 
 .main-container {
@@ -40,6 +40,13 @@ body {
   grid-area: bill;
   display: flex;
   flex-direction: column;
+  color: hsl(184, 14%, 56%);
+}
+
+.bill-amount input::placeholder {
+  font-family: "Space Mono", sans-serif;
+  font-size: 18px;
+  color: hsl(184, 14%, 56%);
 }
 
 .percentages {
@@ -48,8 +55,30 @@ body {
   grid-template-areas: "title title title" "five ten fifteen" "twentyfive fifty custom";
 }
 
+.percent-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.percent-btn:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+
+.active {
+  background-color: hsl(172, 67%, 45%);
+}
+
 .percent-title {
   grid-area: title;
+  color: hsl(184, 14%, 56%);
 }
 
 .five-percent {
@@ -76,10 +105,32 @@ body {
   grid-area: custom;
 }
 
+.custom-percent input {
+  margin: 0 10px;
+  width: 70%;
+}
+
+.custom-percent input::placeholder {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: hsl(183, 100%, 15%);
+}
+
 .number-people {
   grid-area: people;
   display: flex;
   flex-direction: column;
+}
+
+.number-people input::placeholder {
+  font-family: "Space Mono", sans-serif;
+  font-size: 18px;
+  color: hsl(184, 14%, 56%);
+}
+
+.number-people label {
+  color: hsl(184, 14%, 56%);
 }
 
 .display-container {
@@ -170,4 +221,16 @@ body {
 .person {
   color: hsl(184, 14%, 56%);
   font-size: 4px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  background-color: hsl(180, 15%, 94%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
